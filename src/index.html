@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div id="app" class='wrapper'>
+        <header class='header'>
+            <ul>
+                <li>Rock</li>
+                <li>Paper</li>
+                <li>Scissors</li>
+            </ul>
+            <div class='score-box'>
+                <div class='score-header'>score</div>
+                <div class='score'>12</div>
+            </div>
+        </header>
+        <section id='main' class='main show-section'>
+            <div class='images-wrapper'>
+                <img class='triangle' src='/assets/img/bg-triangle.svg' alt='Triangle' />
+                <div id='main__paper__circle' class='main__circle paper-circle'>
+                    <img class='hand' src='/assets/img/icon-paper.svg' alt='Paper' />
+                </div>
+                <div id='main__rock__circle' class='main__circle rock-circle'>
+                    <img class='hand' src='/assets/img/icon-rock.svg' alt='Rock' />
+                </div>
+                <div id='main__scissors__circle' class='main__circle scissors-circle'>
+                    <img class='hand' src='/assets/img/icon-scissors.svg' alt='Scissors'>
+                </div>
+            </div>
+        </section>
+        <section id='play' class='play hide-section'>
+            <div class='pick'>
+                <div class='pick-side'>
+                    <div class='pick__header'>
+                        <h1>You picked</h1>                    
+                    </div>
+                    <div class="circle-wrapper">
+                        <div id='pick-paper-player' class='pick-circle paper-circle show-circle win-circle'>
+                            <img class='hand' src='/assets/img/icon-paper.svg' alt='Paper' />
+                        </div>
+                        <div id='pick-rock-player' class='pick-circle rock-circle hide-circle'>
+                            <img class='hand' src='/assets/img/icon-rock.svg' alt='Paper' />
+                        </div>
+                        <div id='pick-scissors-player' class='pick-circle scissors-circle hide-circle'>
+                            <img class='hand' src='/assets/img/icon-scissors.svg' alt='Paper' />
+                        </div>
+                    </div>
+                </div>
+                <div class='pick-side'>
+                    <div class='pick__header'>
+                        <h1>The house picked</h1>
+                    </div>
+                    <div class="circle-wrapper">
+                        <div id='pick-paper-house' class='pick-circle paper-circle hide-circle'>
+                            <img class='hand' src='/assets/img/icon-paper.svg' alt='Paper' />
+                        </div>
+                        <div id='pick-rock-house' class='pick-circle rock-circle hide-circle'>
+                            <img class='hand' src='/assets/img/icon-rock.svg' alt='Paper' />
+                        </div>
+                        <div id='pick-scissors-house' class='pick-circle scissors-circle show-circle'>
+                            <img class='hand' src='/assets/img/icon-scissors.svg' alt='Paper' />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id='result' class='result'>
+                <h1 class='win-header show-win-header'>You win!</h1>
+                <h1 class='win-header hide-win-header'>The house win</h1>
+                <button class='play-again-button'>Play again</button>
+            </section>
+        </section>
+        <section id='loading' class='show-section'>
+            <div className="sk-circle">
+                <div className="sk-circle1 sk-child"></div>
+                <div className="sk-circle2 sk-child"></div>
+                <div className="sk-circle3 sk-child"></div>
+                <div className="sk-circle4 sk-child"></div>
+                <div className="sk-circle5 sk-child"></div>
+                <div className="sk-circle6 sk-child"></div>
+                <div className="sk-circle7 sk-child"></div>
+                <div className="sk-circle8 sk-child"></div>
+                <div className="sk-circle9 sk-child"></div>
+                <div className="sk-circle10 sk-child"></div>
+                <div className="sk-circle11 sk-child"></div>
+                <div className="sk-circle12 sk-child"></div>
+            </div>
+            <h3 className='text-center'>Cargando...</h3>
+        </section>
+        <section class='rules'>
+            <div id='rules' class='rules-box hide-section'>
+                <img class='rules__img' src="./assets/img/rules.jpg" alt="Rules Box">
+                <img class='rules__exit' src="./assets/img/rules-exit.png" alt="Rules Exit">
+            </div>
+        </section>
+    </div>
+    <footer class='footer'>
+        <button class='rules-button'>Rules</button>
+    </footer>
+</body>
+</html>

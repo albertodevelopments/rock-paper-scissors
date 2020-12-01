@@ -175,13 +175,26 @@ ul {
             background-color: #d7d7d7;
             box-shadow: 2px 2px #aaa inset;
         }
+
+        .hand{
+            transition: all .3s ease;
+            z-index: 100;
+        }
+
+        .show-block{
+            display: block;
+        }
+
+        .hide{
+            display: none;
+        }
     }        
 }
 
 .footer{
-    bottom: 2rem;
     display: flex;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     justify-content: flex-end;
     align-items: center;
 
@@ -208,19 +221,6 @@ ul {
         color: #ccc;
         border: 1px solid #ccc;        
     }
-}
-
-.show-section{
-    display: block;
-}
-
-.hide-section{
-    display: none;
-}
-
-.hand{
-    transition: all .3s ease;
-    z-index: 100;
 }
 
 /*----------------------------------------------------*/
@@ -294,12 +294,12 @@ ul {
                     width: calc(#{$circle-diameter} * 2.5);
                     height: calc(#{$circle-diameter} * 2.5); 
                 }
-        
-                .show-circle{
+
+                .show-flex{
                     display: flex;
                 }
-            
-                .hide-circle{
+        
+                .hide{
                     display: none;
                 }
             }
@@ -319,15 +319,7 @@ ul {
             text-transform: uppercase;
             font-size: 40px;
             margin-bottom: 1rem;
-        }
-
-        .hide-win-header{
-            display: none;
-        }
-
-        .show-win-header{
-            display: block;
-        }
+        }        
 
         .play-again-button{
             background-color: #fff;
@@ -361,33 +353,37 @@ ul {
 }
 
 .rules{
-    display: block;
-    margin: 2rem auto;
-    max-width: 401px;
-    height: auto;    
+    position: relative;
+    margin: 4rem auto;
+    width: 401px;
+    height: 407px;
+    background: url('../../assets/img/rules.jpg') no-repeat;
+    border-radius: .45rem; 
     
-    .rules-box{
-        position: relative;        
+    .rules__exit{
+        position: absolute;
+        top: 4%;
+        right: 3%;
+    }
 
-        .rules__img{
-            position: absolute;
-            width: 95%;
-            height: auto;            
-            border-radius: .45rem; 
-            top: .45rem;
-            left: .45rem;             
-        }
-        
-        .rules__exit{
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            z-index: 50;
-        }
-
-        .rules__exit:hover{
-            cursor: pointer;
-        }
+    .rules__exit:hover{
+        cursor: pointer;
     }
 }
 
+.show-block{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+.show-flex{
+    display: flex;
+}
+
+
+/*----------------------------------------------------*/
+/*-------------------- RESPONSIVE --------------------*/
+/*----------------------------------------------------*/

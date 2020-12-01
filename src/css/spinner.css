@@ -1,17 +1,17 @@
 .sk-circle {
     margin: 100px auto;
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     position: relative;
   }
-  .sk-circle .sk-child {
+.sk-circle .sk-child {
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-  }
-  .sk-circle .sk-child:before {
+}
+.sk-circle .sk-child:before {
     content: '';
     display: block;
     margin: 0 auto;

@@ -16,6 +16,14 @@ import {
 import './scss/styles.scss'
 import './css/spinner.css'
 
+// Imágenes de los elementos
+import './assets/img/bg-triangle.svg'
+import './assets/img/icon-close.svg'
+import './assets/img/icon-paper.svg'
+import './assets/img/icon-rock.svg'
+import './assets/img/icon-scissors.svg'
+import './assets/img/rules-exit.png'
+
 const paper = document.getElementById('main-paper-circle')
 const rock = document.getElementById('main-rock-circle')
 const scissors = document.getElementById('main-scissors-circle')

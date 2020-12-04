@@ -10,35 +10,15 @@ const SCSSRules = {
     use: ['style-loader', 'css-loader', 'sass-loader'],
 }
 
-const FontRules = {
-    test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+const ImgRules = {
+    test: /\.(jpe?g|png|gif|svg)$/i,
     use: [
         {
             loader: 'file-loader',
             options: {
                 name: '[name].[ext]',
-                outputPath: 'assets/fonts/',
-            },
-        },
-    ],
-}
-
-const SVGRules = {
-    test: /\.svg$/,
-    use: [
-        {
-            loader: 'svg-url-loader',
-        },
-    ],
-}
-
-const ImgRules = {
-    test: /\.(jpe?g|png|gif)$/i,
-    use: [
-        {
-            loader: 'file-loader',
-            options: {
                 outputPath: 'assets/img/',
+                useRelativePath: true,
             },
         },
     ],
@@ -49,7 +29,7 @@ module.exports = {
         filename: 'app.js',
     },
     module: {
-        rules: [SCSSRules, FontRules, SVGRules, ImgRules, CSSRules],
+        rules: [SCSSRules, ImgRules, CSSRules],
     },
     plugins: [
         new HtmlWebpackPlugin({

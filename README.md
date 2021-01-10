@@ -1,6 +1,6 @@
 ## Welcome to Rock Paper Scissors
 
-This a version of the old classic game that we all played during our childhood!
+This is a version of the old classic game that we all played during our childhood!
 
 ### How to use it
 
